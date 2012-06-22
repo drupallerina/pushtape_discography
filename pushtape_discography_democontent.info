@@ -1,0 +1,14 @@
+name = Pushtape discography Demo Content
+description = The magic that allows for demo content for music.
+core = 7.x
+package = Pushtape Demo Content
+php = 5.2.4
+version = 7.x-3.1
+project = pushtape_discography_democontent
+dependencies[] = pushtape_discography
+features[content][] = pushtape-discography-defaultcontent-1
+features[content][] = pushtape-discography-defaultcontent-2
+features[content][] = pushtape-discography-defaultcontent-3
+features[content][] = pushtape-discography-defaultcontent-4
+features[features_api][] = api:1
+project status url = http://apps.rosenstrauch.com/software/fserver
