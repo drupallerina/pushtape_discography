@@ -9,10 +9,6 @@
  */
 function pushtape_discography_ctools_plugin_api() {
   list($module, $api) = func_get_args();
-  if ($module == "ds" && $api == "ds") {
-    return array("version" => "1");
-  }
-  list($module, $api) = func_get_args();
   if ($module == "page_manager" && $api == "pages_default") {
     return array("version" => "1");
   }
@@ -39,7 +35,7 @@ function pushtape_discography_views_api() {
 function pushtape_discography_image_default_styles() {
   $styles = array();
 
-  // Exported image style: artwork_huge
+  // Exported image style: artwork_huge.
   $styles['artwork_huge'] = array(
     'name' => 'artwork_huge',
     'effects' => array(
@@ -61,7 +57,7 @@ function pushtape_discography_image_default_styles() {
     ),
   );
 
-  // Exported image style: artwork_large
+  // Exported image style: artwork_large.
   $styles['artwork_large'] = array(
     'name' => 'artwork_large',
     'effects' => array(
@@ -83,7 +79,7 @@ function pushtape_discography_image_default_styles() {
     ),
   );
 
-  // Exported image style: artwork_medium
+  // Exported image style: artwork_medium.
   $styles['artwork_medium'] = array(
     'name' => 'artwork_medium',
     'effects' => array(
@@ -105,7 +101,7 @@ function pushtape_discography_image_default_styles() {
     ),
   );
 
-  // Exported image style: artwork_small
+  // Exported image style: artwork_small.
   $styles['artwork_small'] = array(
     'name' => 'artwork_small',
     'effects' => array(
@@ -127,7 +123,7 @@ function pushtape_discography_image_default_styles() {
     ),
   );
 
-  // Exported image style: artwork_thumbnail
+  // Exported image style: artwork_thumbnail.
   $styles['artwork_thumbnail'] = array(
     'name' => 'artwork_thumbnail',
     'effects' => array(

@@ -8,19 +8,6 @@ include_once('pushtape_discography.features.inc');
 
 
 /**
- * Implements hook_panelizer_default_types_alter()
- */
-function pushtape_discography_panelizer_defaults_alter(&$defaults) {
-  // Require the panels panelizer include from features since 
-  // features doesn't support hook_panelizer_defaults() correctly.
-  // See https://drupal.org/node/1427150 for more on that.
-  require_once('pushtape_discography.panelizer.inc');
-  foreach(pushtape_discography_panelizer_defaults() as $name => $default) {
-    $defaults[$name] = $default;
-  }
-}
-
-/**
  * Implementation of hook_apps_app_info()
  */
 function pushtape_discography_apps_app_info() {

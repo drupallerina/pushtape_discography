@@ -838,7 +838,7 @@ function pushtape_discography_views_default_views() {
   $handler->display->display_options['fields']['title']['hide_empty'] = 0;
   $handler->display->display_options['fields']['title']['empty_zero'] = 0;
   $handler->display->display_options['fields']['title']['link_to_node'] = 1;
-  
+
   /* Display: Block */
   $handler = $view->new_display('block', 'Block', 'block');
   $handler->display->display_options['defaults']['pager'] = FALSE;
@@ -929,7 +929,7 @@ function pushtape_discography_views_default_views() {
   $handler->display->display_options['defaults']['row_plugin'] = FALSE;
   $handler->display->display_options['defaults']['row_options'] = FALSE;
   $handler->display->display_options['defaults']['fields'] = FALSE;
-    /* Field: Content: Title */
+  /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
   $handler->display->display_options['fields']['title']['field'] = 'title';
@@ -1008,7 +1008,7 @@ function pushtape_discography_views_default_views() {
     'link' => 1,
   );
   $handler->display->display_options['fields']['field_album']['field_api_classes'] = 0;
-  
+
   /* Display: Album track pane */
   $handler = $view->new_display('panel_pane', 'Album track pane', 'panel_pane_1');
   $handler->display->display_options['defaults']['title'] = FALSE;
@@ -1139,24 +1139,6 @@ function pushtape_discography_views_default_views() {
     'link' => 1,
   );
   $handler->display->display_options['fields']['field_album']['field_api_classes'] = 0;
-  /* Contextual filter: Content: Album (field_album) */
-  $handler->display->display_options['arguments']['field_album_target_id']['id'] = 'field_album_target_id';
-  $handler->display->display_options['arguments']['field_album_target_id']['table'] = 'field_data_field_album';
-  $handler->display->display_options['arguments']['field_album_target_id']['field'] = 'field_album_target_id';
-  $handler->display->display_options['arguments']['field_album_target_id']['default_action'] = 'default';
-  $handler->display->display_options['arguments']['field_album_target_id']['default_argument_type'] = 'node';
-  $handler->display->display_options['arguments']['field_album_target_id']['default_argument_skip_url'] = 0;
-  $handler->display->display_options['arguments']['field_album_target_id']['summary']['number_of_records'] = '0';
-  $handler->display->display_options['arguments']['field_album_target_id']['summary']['format'] = 'default_summary';
-  $handler->display->display_options['arguments']['field_album_target_id']['summary_options']['items_per_page'] = '25';
-  $handler->display->display_options['arguments']['field_album_target_id']['specify_validation'] = 1;
-  $handler->display->display_options['arguments']['field_album_target_id']['validate']['type'] = 'node';
-  $handler->display->display_options['arguments']['field_album_target_id']['validate_options']['types'] = array(
-    'album' => 'album',
-  );
-  $handler->display->display_options['arguments']['field_album_target_id']['validate_options']['access'] = 0;
-  $handler->display->display_options['arguments']['field_album_target_id']['break_phrase'] = 0;
-  $handler->display->display_options['arguments']['field_album_target_id']['not'] = 0;
   $handler->display->display_options['defaults']['filters'] = FALSE;
   /* Filter criterion: Content: Published */
   $handler->display->display_options['filters']['status']['id'] = 'status';

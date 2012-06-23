@@ -10,7 +10,7 @@
 function pushtape_discography_field_default_fields() {
   $fields = array();
 
-  // Exported field: 'node-album-body'
+  // Exported field: 'node-album-body'.
   $fields['node-album-body'] = array(
     'field_config' => array(
       'active' => '1',
@@ -33,6 +33,7 @@ function pushtape_discography_field_default_fields() {
           0 => 'format',
         ),
       ),
+      'locked' => '0',
       'module' => 'text',
       'settings' => array(),
       'translatable' => '0',
@@ -103,7 +104,7 @@ function pushtape_discography_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-album-field_artist_term'
+  // Exported field: 'node-album-field_artist_term'.
   $fields['node-album-field_artist_term'] = array(
     'field_config' => array(
       'active' => '1',
@@ -124,6 +125,7 @@ function pushtape_discography_field_default_fields() {
           0 => 'tid',
         ),
       ),
+      'locked' => '0',
       'module' => 'taxonomy',
       'settings' => array(
         'allowed_values' => array(
@@ -194,7 +196,7 @@ function pushtape_discography_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-album-field_artwork'
+  // Exported field: 'node-album-field_artwork'.
   $fields['node-album-field_artwork'] = array(
     'field_config' => array(
       'active' => '1',
@@ -215,6 +217,7 @@ function pushtape_discography_field_default_fields() {
           0 => 'fid',
         ),
       ),
+      'locked' => '0',
       'module' => 'image',
       'settings' => array(
         'default_image' => 0,
@@ -310,7 +313,7 @@ function pushtape_discography_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-album-field_release_date'
+  // Exported field: 'node-album-field_release_date'.
   $fields['node-album-field_release_date'] = array(
     'field_config' => array(
       'active' => '1',
@@ -331,6 +334,7 @@ function pushtape_discography_field_default_fields() {
           0 => 'format',
         ),
       ),
+      'locked' => '0',
       'module' => 'text',
       'settings' => array(
         'max_length' => '255',
@@ -396,99 +400,7 @@ function pushtape_discography_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-album-field_tags'
-  $fields['node-album-field_tags'] = array(
-    'field_config' => array(
-      'active' => '1',
-      'cardinality' => '-1',
-      'deleted' => '0',
-      'entity_types' => array(),
-      'field_name' => 'field_tags',
-      'foreign keys' => array(
-        'tid' => array(
-          'columns' => array(
-            'tid' => 'tid',
-          ),
-          'table' => 'taxonomy_term_data',
-        ),
-      ),
-      'indexes' => array(
-        'tid' => array(
-          0 => 'tid',
-        ),
-      ),
-      'module' => 'taxonomy',
-      'settings' => array(
-        'allowed_values' => array(
-          0 => array(
-            'vocabulary' => 'pushtape_tags',
-            'parent' => '0',
-          ),
-        ),
-      ),
-      'translatable' => '0',
-      'type' => 'taxonomy_term_reference',
-    ),
-    'field_instance' => array(
-      'bundle' => 'album',
-      'default_value' => NULL,
-      'deleted' => '0',
-      'description' => '',
-      'display' => array(
-        'default' => array(
-          'label' => 'inline',
-          'module' => 'taxonomy',
-          'settings' => array(),
-          'type' => 'taxonomy_term_reference_link',
-          'weight' => '5',
-        ),
-        'featured' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
-        ),
-        'full' => array(
-          'label' => 'hidden',
-          'module' => 'taxonomy',
-          'settings' => array(),
-          'type' => 'taxonomy_term_reference_link',
-          'weight' => '5',
-        ),
-        'mediaplaylist' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => '0',
-        ),
-        'teaser' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
-        ),
-      ),
-      'entity_type' => 'node',
-      'field_name' => 'field_tags',
-      'label' => 'Tags',
-      'required' => 0,
-      'settings' => array(
-        'user_register_form' => FALSE,
-      ),
-      'widget' => array(
-        'active' => 0,
-        'module' => 'taxonomy',
-        'settings' => array(
-          'autocomplete_path' => 'taxonomy/autocomplete',
-          'size' => 60,
-        ),
-        'type' => 'taxonomy_autocomplete',
-        'weight' => '5',
-      ),
-    ),
-  );
-
-  // Exported field: 'node-album-field_tracklist'
+  // Exported field: 'node-album-field_tracklist'.
   $fields['node-album-field_tracklist'] = array(
     'field_config' => array(
       'active' => '1',
@@ -509,6 +421,7 @@ function pushtape_discography_field_default_fields() {
           0 => 'target_id',
         ),
       ),
+      'locked' => '0',
       'module' => 'entityreference',
       'settings' => array(
         'handler' => 'base',
@@ -584,9 +497,9 @@ function pushtape_discography_field_default_fields() {
         'settings' => array(
           'match_operator' => 'CONTAINS',
           'path' => '',
-          'references_dialog_add' => 0,
-          'references_dialog_edit' => 0,
-          'references_dialog_search' => 0,
+          'references_dialog_add' => 1,
+          'references_dialog_edit' => 1,
+          'references_dialog_search' => 1,
           'references_dialog_search_view' => '',
           'size' => '60',
         ),
@@ -596,7 +509,7 @@ function pushtape_discography_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-track-body'
+  // Exported field: 'node-track-body'.
   $fields['node-track-body'] = array(
     'field_config' => array(
       'active' => '1',
@@ -619,6 +532,7 @@ function pushtape_discography_field_default_fields() {
           0 => 'format',
         ),
       ),
+      'locked' => '0',
       'module' => 'text',
       'settings' => array(),
       'translatable' => '0',
@@ -689,7 +603,7 @@ function pushtape_discography_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-track-field_album'
+  // Exported field: 'node-track-field_album'.
   $fields['node-track-field_album'] = array(
     'field_config' => array(
       'active' => '1',
@@ -710,6 +624,7 @@ function pushtape_discography_field_default_fields() {
           0 => 'target_id',
         ),
       ),
+      'locked' => '0',
       'module' => 'entityreference',
       'settings' => array(
         'handler' => 'base',
@@ -790,7 +705,7 @@ function pushtape_discography_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-track-field_artist_term'
+  // Exported field: 'node-track-field_artist_term'.
   $fields['node-track-field_artist_term'] = array(
     'field_config' => array(
       'active' => '1',
@@ -811,6 +726,7 @@ function pushtape_discography_field_default_fields() {
           0 => 'tid',
         ),
       ),
+      'locked' => '0',
       'module' => 'taxonomy',
       'settings' => array(
         'allowed_values' => array(
@@ -881,7 +797,7 @@ function pushtape_discography_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-track-field_artwork'
+  // Exported field: 'node-track-field_artwork'.
   $fields['node-track-field_artwork'] = array(
     'field_config' => array(
       'active' => '1',
@@ -902,6 +818,7 @@ function pushtape_discography_field_default_fields() {
           0 => 'fid',
         ),
       ),
+      'locked' => '0',
       'module' => 'image',
       'settings' => array(
         'default_image' => 0,
@@ -997,7 +914,7 @@ function pushtape_discography_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-track-field_credits'
+  // Exported field: 'node-track-field_credits'.
   $fields['node-track-field_credits'] = array(
     'field_config' => array(
       'active' => '1',
@@ -1018,6 +935,7 @@ function pushtape_discography_field_default_fields() {
           0 => 'format',
         ),
       ),
+      'locked' => '0',
       'module' => 'text',
       'settings' => array(),
       'translatable' => '1',
@@ -1082,7 +1000,7 @@ function pushtape_discography_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-track-field_license'
+  // Exported field: 'node-track-field_license'.
   $fields['node-track-field_license'] = array(
     'field_config' => array(
       'active' => '1',
@@ -1096,6 +1014,7 @@ function pushtape_discography_field_default_fields() {
           0 => 'value',
         ),
       ),
+      'locked' => '0',
       'module' => 'list',
       'settings' => array(
         'allowed_values' => array(
@@ -1172,7 +1091,7 @@ function pushtape_discography_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-track-field_lyrics'
+  // Exported field: 'node-track-field_lyrics'.
   $fields['node-track-field_lyrics'] = array(
     'field_config' => array(
       'active' => '1',
@@ -1193,6 +1112,7 @@ function pushtape_discography_field_default_fields() {
           0 => 'format',
         ),
       ),
+      'locked' => '0',
       'module' => 'text',
       'settings' => array(),
       'translatable' => '1',
@@ -1257,7 +1177,7 @@ function pushtape_discography_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-track-field_release_date'
+  // Exported field: 'node-track-field_release_date'.
   $fields['node-track-field_release_date'] = array(
     'field_config' => array(
       'active' => '1',
@@ -1278,6 +1198,7 @@ function pushtape_discography_field_default_fields() {
           0 => 'format',
         ),
       ),
+      'locked' => '0',
       'module' => 'text',
       'settings' => array(
         'max_length' => '255',
@@ -1343,98 +1264,6 @@ function pushtape_discography_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-track-field_tags'
-  $fields['node-track-field_tags'] = array(
-    'field_config' => array(
-      'active' => '1',
-      'cardinality' => '-1',
-      'deleted' => '0',
-      'entity_types' => array(),
-      'field_name' => 'field_tags',
-      'foreign keys' => array(
-        'tid' => array(
-          'columns' => array(
-            'tid' => 'tid',
-          ),
-          'table' => 'taxonomy_term_data',
-        ),
-      ),
-      'indexes' => array(
-        'tid' => array(
-          0 => 'tid',
-        ),
-      ),
-      'module' => 'taxonomy',
-      'settings' => array(
-        'allowed_values' => array(
-          0 => array(
-            'vocabulary' => 'pushtape_tags',
-            'parent' => '0',
-          ),
-        ),
-      ),
-      'translatable' => '0',
-      'type' => 'taxonomy_term_reference',
-    ),
-    'field_instance' => array(
-      'bundle' => 'track',
-      'default_value' => NULL,
-      'deleted' => '0',
-      'description' => '',
-      'display' => array(
-        'default' => array(
-          'label' => 'inline',
-          'module' => 'taxonomy',
-          'settings' => array(),
-          'type' => 'taxonomy_term_reference_link',
-          'weight' => '9',
-        ),
-        'featured' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
-        ),
-        'full' => array(
-          'label' => 'above',
-          'module' => 'taxonomy',
-          'settings' => array(),
-          'type' => 'taxonomy_term_reference_link',
-          'weight' => '4',
-        ),
-        'mediaplaylist' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => '0',
-        ),
-        'teaser' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => '0',
-        ),
-      ),
-      'entity_type' => 'node',
-      'field_name' => 'field_tags',
-      'label' => 'Tags',
-      'required' => 0,
-      'settings' => array(
-        'user_register_form' => FALSE,
-      ),
-      'widget' => array(
-        'active' => 1,
-        'module' => 'taxonomy',
-        'settings' => array(
-          'autocomplete_path' => 'taxonomy/autocomplete',
-          'size' => 60,
-        ),
-        'type' => 'taxonomy_autocomplete',
-        'weight' => '8',
-      ),
-    ),
-  );
-
   // Translatables
   // Included for use with string extractors like potx.
   t('(Leave blank to use album release date.)');
@@ -1448,7 +1277,6 @@ function pushtape_discography_field_default_fields() {
   t('Notes');
   t('Release date');
   t('Released');
-  t('Tags');
   t('Tracklist');
 
   return $fields;
