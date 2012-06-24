@@ -1,9 +1,9 @@
-name = Pushtape discography
+name = Pushtape Discography
 description = Creates album and track content types and views.
 core = 7.x
 package = Pushtape
 php = 5.2.4
-version = 7.x-3.7
+version = 7.x-1.x
 project = pushtape_discography
 dependencies[] = block
 dependencies[] = ctools
