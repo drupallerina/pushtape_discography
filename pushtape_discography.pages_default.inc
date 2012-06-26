@@ -134,9 +134,9 @@ function pushtape_discography_default_page_manager_pages() {
   $page->api_version = 1;
   $page->name = 'pushtape_music_panel';
   $page->task = 'page';
-  $page->admin_title = 'Pushtape Discography Panel';
+  $page->admin_title = 'Pushtape Discography Overview';
   $page->admin_description = 'Discography';
-  $page->path = 'discography/albums';
+  $page->path = 'discography';
   $page->access = array();
   $page->menu = array(
     'type' => 'normal',
@@ -284,7 +284,7 @@ function pushtape_discography_default_page_manager_pages() {
   $page->name = 'pushtape_tracks';
   $page->task = 'page';
   $page->admin_title = 'Pushtape tracks';
-  $page->admin_description = 'Album view of discography';
+  $page->admin_description = 'Track view of discography';
   $page->path = 'discography/tracks';
   $page->access = array();
   $page->menu = array(
