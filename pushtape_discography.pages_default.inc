@@ -18,14 +18,14 @@ function pushtape_discography_default_page_manager_pages() {
   $page->path = 'discography/albums';
   $page->access = array();
   $page->menu = array(
-    'type' => 'normal',
-    'title' => 'discography',
+    'type' => 'default tab',
+    'title' => 'Albums',
     'name' => 'main-menu',
     'weight' => '0',
     'parent' => array(
-      'type' => 'none',
+      'type' => 'normal',
       'title' => '',
-      'name' => 'navigation',
+      'name' => 'main-menu',
       'weight' => '0',
     ),
   );
@@ -284,12 +284,12 @@ function pushtape_discography_default_page_manager_pages() {
   $page->name = 'pushtape_tracks';
   $page->task = 'page';
   $page->admin_title = 'Pushtape tracks';
-  $page->admin_description = 'Track view of discography';
+  $page->admin_description = 'Album view of discography';
   $page->path = 'discography/tracks';
   $page->access = array();
   $page->menu = array(
-    'type' => 'normal',
-    'title' => 'Discography',
+    'type' => 'tab',
+    'title' => 'Tracks',
     'name' => 'main-menu',
     'weight' => '0',
     'parent' => array(
