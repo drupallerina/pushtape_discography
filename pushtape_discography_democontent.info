@@ -6,6 +6,7 @@ php = 5.2.4
 version = 7.x-3.11
 project = pushtape_discography_democontent
 dependencies[] = pushtape_discography
+dependencies[] = democontent
 features[content][] = pushtape-discography-defaultcontent-1
 features[content][] = pushtape-discography-defaultcontent-2
 features[content][] = pushtape-discography-defaultcontent-3
