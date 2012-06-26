@@ -17,7 +17,7 @@ function pushtape_discography_democontent_get_terms() {
 function pushtape_discography_democontent_init() {
 
   // Install the taxonomy terms after features has already been installed.
-  if (!variable_get('pushtape_discography_democontent_installed', FALSE) && $vocab = taxonomy_vocabulary_machine_name_load('pushtape_academic_term')) {
+  if (!variable_get('pushtape_discography_democontent_installed', FALSE) && $vocab = taxonomy_vocabulary_machine_name_load('pushtape_tags')) {
 
     // Add default taxonomy terms
     $tags = pushtape_discography_democontent_get_terms();
