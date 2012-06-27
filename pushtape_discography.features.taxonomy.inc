@@ -17,7 +17,7 @@ function pushtape_discography_taxonomy_default_vocabularies() {
       'module' => 'taxonomy',
       'weight' => '0',
     ),
-      'tags' => array(
+    'pushtape_tags' => array(
       'name' => 'Tags',
       'machine_name' => 'pushtape_tags',
       'description' => 'Use tags to group articles on similar topics into categories.',

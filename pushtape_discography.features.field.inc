@@ -1463,6 +1463,7 @@ function pushtape_discography_field_default_fields() {
   t('Notes');
   t('Release date');
   t('Released');
+  t('Tags');
   t('Tracklist');
 
   return $fields;

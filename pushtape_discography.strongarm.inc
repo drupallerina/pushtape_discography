@@ -166,8 +166,28 @@ function pushtape_discography_strongarm() {
   $strongarm->name = 'panelizer_defaults_node_album';
   $strongarm->value = array(
     'status' => 1,
-    'default' => 1,
-    'choice' => 0,
+    'view modes' => array(
+      'page_manager' => array(
+        'status' => 1,
+        'default' => 1,
+        'choice' => 0,
+      ),
+      'default' => array(
+        'status' => 1,
+        'default' => 1,
+        'choice' => 1,
+      ),
+      'teaser' => array(
+        'status' => 0,
+        'default' => 0,
+        'choice' => 0,
+      ),
+      'featured' => array(
+        'status' => 0,
+        'default' => 0,
+        'choice' => 0,
+      ),
+    ),
   );
   $export['panelizer_defaults_node_album'] = $strongarm;
 
@@ -177,8 +197,28 @@ function pushtape_discography_strongarm() {
   $strongarm->name = 'panelizer_defaults_node_track';
   $strongarm->value = array(
     'status' => 1,
-    'default' => 1,
-    'choice' => 0,
+    'view modes' => array(
+      'page_manager' => array(
+        'status' => 1,
+        'default' => 1,
+        'choice' => 1,
+      ),
+      'default' => array(
+        'status' => 1,
+        'default' => 1,
+        'choice' => 0,
+      ),
+      'teaser' => array(
+        'status' => 0,
+        'default' => 0,
+        'choice' => 0,
+      ),
+      'featured' => array(
+        'status' => 0,
+        'default' => 0,
+        'choice' => 0,
+      ),
+    ),
   );
   $export['panelizer_defaults_node_track'] = $strongarm;
 
@@ -188,8 +228,18 @@ function pushtape_discography_strongarm() {
   $strongarm->name = 'panelizer_defaults_taxonomy_term_artist';
   $strongarm->value = array(
     'status' => 0,
-    'default' => 0,
-    'choice' => 0,
+    'view modes' => array(
+      'page_manager' => array(
+        'status' => 0,
+        'default' => 0,
+        'choice' => 0,
+      ),
+      'default' => array(
+        'status' => 0,
+        'default' => 0,
+        'choice' => 0,
+      ),
+    ),
   );
   $export['panelizer_defaults_taxonomy_term_artist'] = $strongarm;
 
